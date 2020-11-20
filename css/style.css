@@ -19,6 +19,12 @@ body {
     padding: 1%;
 }
 
+@media (min-width: 640px) {
+    body {
+        max-width: 640px;
+    }
+}
+
 /* NAV */
 
 nav {
@@ -173,6 +179,13 @@ main {
     text-align: center;
 }
 
+@media (min-width: 640px) {
+    .offer {
+        width: 85%;
+        padding: 15px;
+    }
+}
+
 .offer:nth-of-type(2),
 .offer:nth-of-type(3) {
     background-color: #3C3C3C;
@@ -224,6 +237,12 @@ main {
     box-shadow: 2px 8px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 640px) {
+    .trust h1 {
+        margin: 5%;
+    }
+}
+
 .trust:before {
     display: block;
     content: "";
@@ -232,6 +251,12 @@ main {
     background-color: black;
     margin: 30px 0 30px 5%;
     ;
+}
+
+@media (min-width: 640px) {
+    .trust:before {
+        width: 10%;
+    }
 }
 
 .logos {
@@ -250,6 +275,14 @@ main {
     transition: .3s linear;
 }
 
+@media (min-width: 640px) {
+    .logo {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+}
+
 .logo:hover {
     filter: grayscale(0);
     opacity: 1;
@@ -259,6 +292,13 @@ main {
     width: 60%;
 }
 
+@media (min-width: 640px) {
+    .logo img {
+        width: 80%;
+        height: auto;
+    }
+}
+
 .references {
     width: 100%;
 }
@@ -266,6 +306,7 @@ main {
 .references h1 {
     width: 100%;
 }
+
 
 .references h3 {
     text-transform: none;
