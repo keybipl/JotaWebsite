@@ -24,7 +24,7 @@ body {
 nav {
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
@@ -103,8 +103,8 @@ header h1:nth-of-type(2) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16vh;
-    height: 9vh;
+    width: 160px;
+    height: 90px;
     z-index: 2;
     border-radius: 20px;
     animation: text 12s infinite;
@@ -216,11 +216,11 @@ main {
     letter-spacing: 2px;
 }
 
-.trust p {
+.trust h1 {
     background-color: #3C3C3C;
+    font-size: 2rem;
     color: #fefefe;
     padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 2px 8px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -259,14 +259,74 @@ main {
     width: 60%;
 }
 
+.references {
+    width: 100%;
+}
+
+.references h1 {
+    width: 100%;
+}
+
+.references h3 {
+    text-transform: none;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.references h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+
+.references p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-transform: none;
+    font-weight: 400;
+    padding: 0 15px;
+}
+
+.references button {
+    margin-top: 20px;
+    background-color: #686157;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 2px 8px 8px 0px rgba(0, 0, 0, 0.5);
+    transition: .3s linear;
+}
+
+.references button:hover {
+    box-shadow: none;
+}
+
+
 /* FOOTER */
 
 .contact {
     background-color: #3C3C3C;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+footer:before {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: black;
+    margin: 50px 0 30px 5%;
+    ;
 }
 
 .contact h1 {
@@ -300,6 +360,17 @@ main {
 .data p:nth-of-type(3) {
     text-decoration: dashed;
     margin-bottom: 15px;
+}
+
+.data a {
+    text-decoration: none;
+    color: #bebebe;
+    transition: .3s linear;
+
+}
+
+.data a:hover {
+    color: #686157
 }
 
 .row {
