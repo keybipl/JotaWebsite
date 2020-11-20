@@ -15,12 +15,14 @@ html {
 
 body {
     margin: 0 auto;
+    width: 360px;
     max-width: 360px;
     padding: 1%;
 }
 
 @media (min-width: 640px) {
     body {
+        width: 640px;
         max-width: 640px;
     }
 }
@@ -28,12 +30,20 @@ body {
 /* NAV */
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     margin: 0 auto;
+    padding: 10px;
+    height: 50px;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    background-color: #fff;
+    z-index: 2;
 }
+
 
 .burger i {
     font-size: 3rem;
@@ -51,7 +61,7 @@ nav {
 
 .slogan {
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     letter-spacing: 3px;
     font-weight: 700;
 }
@@ -63,7 +73,9 @@ header {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 video.header {
@@ -93,6 +105,12 @@ header h1 {
     animation: text 12s infinite;
     opacity: 0;
     letter-spacing: 4px;
+}
+
+@media (min-width: 640px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
 }
 
 
@@ -390,12 +408,26 @@ footer:before {
     margin-top: 5%;
 }
 
+@media (min-width: 640px) {
+    .person img {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
 .data {
     width: 50%;
     font-family: 'Montserrat', sans-serif;
     color: #bebebe;
     font-size: 1.5rem;
     line-height: 150%;
+}
+
+@media (min-width: 640px) {
+    .data {
+        font-size: 1.8rem;
+        line-height: 180%;
+    }
 }
 
 .data p:nth-of-type(3) {
@@ -431,4 +463,11 @@ footer:before {
     color: rgb(190, 190, 190);
     font-size: 1.6rem;
     margin: 5%;
+}
+
+@media (min-width: 640px) {
+    .media {
+        font-size: 2.4rem;
+        margin: 3%;
+    }
 }
