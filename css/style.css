@@ -32,8 +32,9 @@ body {
 nav {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     margin: 0 auto;
+    transform: translateX(-50%);
     padding: 10px;
     height: 50px;
     width: 95%;
@@ -42,6 +43,13 @@ nav {
     align-items: center;
     background-color: #fff;
     z-index: 2;
+    max-width: 360px;
+}
+
+@media (min-width: 640px) {
+    nav {
+        max-width: 640px;
+    }
 }
 
 
@@ -199,7 +207,7 @@ main {
 
 @media (min-width: 640px) {
     .offer {
-        width: 85%;
+        width: 86%;
         padding: 15px;
     }
 }
