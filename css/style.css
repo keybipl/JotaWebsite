@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+/* https://www.templatemonsterpreview.com/pl/demo/74194.html */
 
 * {
     padding: 0;
@@ -15,9 +16,7 @@ html {
 
 body {
     margin: 0 auto;
-    width: 360px;
     max-width: 360px;
-    padding: 1%;
 }
 
 @media (min-width: 640px) {
@@ -37,7 +36,7 @@ nav {
     transform: translateX(-50%);
     padding: 10px;
     height: 50px;
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,12 +45,38 @@ nav {
     max-width: 360px;
 }
 
+
 @media (min-width: 640px) {
     nav {
         max-width: 640px;
     }
 }
 
+.navbar {
+    position: absolute;
+    width: 150px;
+    top: 50px;
+    left: -150px;
+    background-color: #fff;
+    height: 300px;
+    transition: 1s;
+}
+
+.navbar.active {
+    left: 0;
+}
+
+nav ul {
+    margin-top: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    color: #6a7680;
+    padding: 10px;
+    padding-left: 20px;
+}
 
 .burger i {
     font-size: 3rem;
@@ -137,7 +162,7 @@ header h1:nth-of-type(2) {
     transform: translate(-50%, -50%);
     width: 160px;
     height: 90px;
-    z-index: 2;
+    z-index: 1;
     border-radius: 20px;
     animation: text 12s infinite;
     animation-delay: 8s;
@@ -207,7 +232,7 @@ main {
 
 @media (min-width: 640px) {
     .offer {
-        width: 86%;
+        width: 87%;
         padding: 15px;
     }
 }
