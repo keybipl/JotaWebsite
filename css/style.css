@@ -16,14 +16,7 @@ html {
 
 body {
     margin: 0 auto;
-    max-width: 360px;
-}
-
-@media (min-width: 640px) {
-    body {
-        width: 640px;
-        max-width: 640px;
-    }
+    max-width: 1920px;
 }
 
 /* NAV */
@@ -42,28 +35,23 @@ nav {
     align-items: center;
     background-color: #fff;
     z-index: 2;
-    max-width: 360px;
-}
-
-
-@media (min-width: 640px) {
-    nav {
-        max-width: 640px;
-    }
 }
 
 .navbar {
     position: absolute;
     width: 150px;
     top: 50px;
-    left: -150px;
+    /* left: -150px; */
+    left: 0;
     background-color: #fff;
     height: 300px;
+    opacity: 0;
     transition: 1s;
 }
 
 .navbar.active {
-    left: 0;
+    /* left: 0; */
+    opacity: 1;
 }
 
 nav ul {
@@ -169,6 +157,13 @@ header h1:nth-of-type(2) {
     opacity: 0;
 }
 
+@media (min-width: 768px) {
+    .jota {
+        width: 240px;
+        height: 135px;
+    }
+}
+
 .jota img {
     width: 70%;
 }
@@ -217,6 +212,13 @@ main {
     margin-top: 10px;
 }
 
+@media (min-width: 1024px) {
+    .offerwrap {
+        flex-wrap: nowrap;
+
+    }
+}
+
 .offer {
     width: 90%;
     height: 300px;
@@ -236,6 +238,21 @@ main {
         padding: 15px;
     }
 }
+
+@media (min-width: 640px) {
+    .offer {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .offer {
+        width: 30%;
+        height: 300px;
+        margin: 1%;
+    }
+}
+
 
 .offer:nth-of-type(2),
 .offer:nth-of-type(3) {
@@ -301,12 +318,12 @@ main {
     height: 2px;
     background-color: black;
     margin: 30px 0 30px 5%;
-    ;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
     .trust:before {
-        width: 10%;
+        margin-top: 60px;
+        margin-bottom: -25px;
     }
 }
 
@@ -315,6 +332,13 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15px;
+}
+
+@media (min-width: 1024px) {
+    .logos {
+        flex-wrap: nowrap;
+        margin: 5%;
+    }
 }
 
 .logo {
@@ -383,6 +407,12 @@ main {
     padding: 0 15px;
 }
 
+@media (min-width: 768px) {
+    .references p {
+        padding: 0 5%;
+    }
+}
+
 .references button {
     margin-top: 20px;
     background-color: #686157;
@@ -411,6 +441,12 @@ main {
     justify-content: space-around;
 }
 
+@media (min-width: 1024px) {
+    .contact {
+        justify-content: center;
+    }
+}
+
 footer:before {
     display: block;
     content: "";
@@ -418,7 +454,6 @@ footer:before {
     height: 2px;
     background-color: black;
     margin: 50px 0 30px 5%;
-    ;
 }
 
 .contact h1 {
@@ -431,9 +466,21 @@ footer:before {
     margin: 5%;
 }
 
+@media (min-width: 1024px) {
+    .contact h1 {
+        text-align: center;
+    }
+}
+
 .person {
     width: 40%;
     text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .person {
+        width: 50%;
+    }
 }
 
 .person img {
@@ -444,6 +491,13 @@ footer:before {
 @media (min-width: 640px) {
     .person img {
         width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .person img {
+        width: 50%;
         margin-top: 0;
     }
 }
@@ -463,9 +517,21 @@ footer:before {
     }
 }
 
+@media (min-width: 1024px) {
+    .data {
+        width: 30%;
+    }
+}
+
 .data p:nth-of-type(3) {
     text-decoration: dashed;
     margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .data p:nth-of-type(3) {
+        margin-bottom: 60px;
+    }
 }
 
 .data a {
@@ -486,10 +552,22 @@ footer:before {
     margin-top: 15px;
 }
 
+@media (min-width:1024px) {
+    .row {
+        width: 60%;
+    }
+}
+
 .medias {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+@media (min-width:1024px) {
+    .medias {
+        width: 75%;
+    }
 }
 
 .media {
