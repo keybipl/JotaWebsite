@@ -379,6 +379,12 @@ main {
     color: #fefefe;
 }
 
+@media (min-width: 1024px) {
+    .offer:nth-of-type(1) h2 {
+        width: 70%
+    }
+}
+
 .trust {
     font-family: "Playfair Display", "Times New Roman", Times, serif;
     font-size: 2rem;
