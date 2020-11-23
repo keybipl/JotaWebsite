@@ -108,7 +108,6 @@ nav ul li {
     nav ul li {
         padding-left: 0;
         padding: 5px;
-
         text-align: center;
         border-bottom: 1px solid black;
     }
@@ -120,6 +119,8 @@ nav ul li a {
     color: #6a7680;
     text-decoration: none;
     width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .burger {
@@ -139,6 +140,7 @@ nav ul li a {
 .burger.active i {
     font-size: 3rem;
     color: #B3BBC1;
+    cursor: pointer;
 }
 
 .close {
@@ -152,6 +154,7 @@ nav ul li a {
 .close.active i {
     font-size: 3rem;
     color: #B3BBC1;
+    cursor: pointer;
 }
 
 .slogan {
