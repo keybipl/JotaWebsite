@@ -109,7 +109,38 @@ nav ul li {
         padding-left: 0;
         padding: 5px;
         text-align: center;
-        border-bottom: 1px solid black;
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav ul li:hover::after {
+        top: 95%;
+        left: 0;
+    }
+
+    nav ul li:hover a {
+        color: #686157;
+    }
+}
+
+
+nav ul li:after {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    nav ul li:after {
+        position: absolute;
+        text-align: center;
+        top: 95%;
+        left: -100%;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #686157;
+        transition: .2s linear;
+        margin: 0 auto;
     }
 }
 
