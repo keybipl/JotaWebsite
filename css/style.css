@@ -16,8 +16,6 @@ html {
 
 body {
     margin: 0 auto;
-    min-width: 320px;
-    max-width: 1366px;
 }
 
 /* NAV */
@@ -36,6 +34,7 @@ nav {
     align-items: center;
     background-color: #fff;
     z-index: 2;
+    min-width: 320px;
     max-width: 1366px;
 }
 
@@ -178,6 +177,7 @@ header {
     margin-top: 50px;
     margin-bottom: 30px;
     width: 100%;
+    min-width: 320px;
 }
 
 @media (min-width: 1024px) {
@@ -291,6 +291,8 @@ header h1:nth-of-type(2) {
 
 main {
     margin: 0 auto;
+    min-width: 320px;
+    max-width: 1366px;
 }
 
 .offerwrap {
@@ -303,6 +305,7 @@ main {
 @media (min-width: 1024px) {
     .offerwrap {
         flex-wrap: nowrap;
+        margin-top: -120px;
 
     }
 }
@@ -521,12 +524,25 @@ main {
 
 /* FOOTER */
 
+footer {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1366px;
+}
+
 .contact {
     background-color: #3C3C3C;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+@media (min-width:1024px) {
+    .contact {
+        height: 500px;
+        justify-content: center;
+    }
 }
 
 
@@ -552,6 +568,7 @@ footer:before {
 @media (min-width: 1024px) {
     .contact h1 {
         text-align: center;
+        margin: 2%;
     }
 }
 
@@ -564,6 +581,7 @@ footer:before {
     .person {
         width: 30%;
         order: 1;
+        text-align: center;
     }
 }
 
@@ -581,8 +599,10 @@ footer:before {
 
 @media (min-width: 1024px) {
     .person img {
-        width: 100%;
+        width: 80%;
         margin-top: 0;
+        max-height: 250px;
+        max-width: 250px;
     }
 }
 
@@ -687,7 +707,7 @@ footer:before {
 
 @media (min-width: 1024px) {
     .map {
-        width: 30%;
+        width: 40%;
         order: 3;
     }
 }
